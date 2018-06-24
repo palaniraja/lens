@@ -37,6 +37,7 @@ lens50="Canon EF 50mm f/1.8 STM"
 # pipe to cut (below) should also work, wondering if exiftool find the no. based on max exif name
 # cut -c 35-
 # 35 is padding char by exiftool
+# -s2 remove the space padding
 
 
 
@@ -49,10 +50,10 @@ lens50="Canon EF 50mm f/1.8 STM"
 
 echo "-------"
 
-model=`exiftool "$1" | grep "Lens ID" | awk -F': ' '{ print $2 }'`
+model=`exiftool -s2  -LensID "$1" | awk -F': ' '{ print $2 }'`
 echo "Model: $model"
 
-flength=`exiftool -FocalLength "$1" | awk -F': ' '{ print $2 }'`
+flength=`exiftool -s2  -FocalLength "$1" | awk -F': ' '{ print $2 }'`
 echo "Focal Length: $flength"
 
 echo "-------"
