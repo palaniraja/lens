@@ -60,15 +60,15 @@ echo "-------"
 
 if [ "$model" == "$lens1855" ]
 then
-    echo "It is an 18-55mm lens @ $flength"
+    echo "It is a 18-55mm lens @ $flength"
 fi
 
 if [ "$model" == "$lens50" ]
 then
-    echo "It is an 50mm lens @ $flength"
+    echo "It is a 50mm lens @ $flength"
 fi
 
 if [ "$model" == "$lens55250" ]
 then
-    echo "It is an 55-250mm lens @ $flength"
+    echo "It is a 55-250mm lens @ $flength"
 fi
