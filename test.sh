@@ -22,6 +22,28 @@ echo "Hello world!"
 
 # exit 0
 
+mymap=()
+
+function aa1 () {
+    mymap=()
+    mymap["18"]="0.02504,-0.06883,0.01502"
+    mymap["24"]="0.0203,-0.06514,0.04768"
+}
+
+function aa2 () {
+    mymap=()
+    mymap["29"]="0.00854,-0.01505,-0.00639"
+    mymap["35"]="-0.01582,0.04918,-0.05313"
+}
+
+
+aa2
+
+echo "${mymap[@]}"
+
+exit 0
+
+
 
 valABC=""
 
